@@ -2,8 +2,14 @@
   "name": "@pixi/particle-emitter",
   "version": "6.0.0",
   "main": "lib/particle-emitter.js",
-  "module": "lib/particle-emitter.es.js",
+  "module": "lib/particle-emitter.es.mjs",
   "bundle": "dist/particle-emitter.js",
+  "exports": {
+    ".": {
+      "require": "./lib/particle-emitter.js",
+      "import": "./lib/particle-emitter.es.mjs"
+    }
+  },
   "typings": "lib/index.d.ts",
   "description": "Particle emitter for Pixi.js",
   "author": "Andrew Start <start.andrew@gmail.com>",

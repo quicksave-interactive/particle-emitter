@@ -90,7 +90,7 @@ async function main()
         output: [
             {
                 banner,
-                file: path.join(basePath, pkg.module.replace('.es.js', '-editor.es.js')),
+                file: path.join(basePath, pkg.module.replace('.es.mjs', '-editor.es.mjs')),
                 format: 'es',
                 freeze,
                 sourcemap,
